@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Planer – 学習計画SaaS</title>
+    <meta name="description" content="学習タスクを週次で計画し、タイマーと実績で継続を支援するSaaS。" />
+    <link rel="icon" href="./assets/logo.svg" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="bg-neutral-950 text-neutral-100 font-[Inter]">
+    <!-- Navbar -->
+    <header class="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-neutral-950/60">
+      <div class="mx-auto max-w-7xl px-4 py-3 flex items-center justify-between">
+        <a href="#top" class="flex items-center gap-2">
+          <img src="./assets/logo.svg" class="h-6 w-6" alt="Planer" />
+          <span class="font-semibold">Planer</span>
+        </a>
+        <nav class="hidden md:flex items-center gap-6 text-sm text-neutral-300">
+          <a href="#features" class="hover:text-white">Features</a>
+          <a href="#how" class="hover:text-white">How it works</a>
+          <a href="#pricing" class="hover:text-white">Pricing</a>
+          <a href="#faq" class="hover:text-white">FAQ</a>
+          <a href="#cta" class="ml-2 rounded-lg bg-white/10 hover:bg-white/20 px-4 py-2 text-white">Get started</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section id="top" class="relative overflow-hidden">
+      <div class="absolute -top-40 left-1/2 -translate-x-1/2 h-[32rem] w-[32rem] rounded-full bg-gradient-to-tr from-indigo-500/20 via-violet-500/10 to-cyan-500/10 blur-3xl"></div>
+      <div class="mx-auto max-w-7xl px-4 py-20 grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <p class="text-xs uppercase tracking-widest text-neutral-400">1000+ 学習者が利用中</p>
+          <h1 class="mt-2 text-4xl md:text-5xl font-extrabold leading-tight">計画・タイマー・実績がひとつに。<br/>学習を継続できるダッシュボード</h1>
+          <p class="mt-4 text-neutral-300">ウィークリー計画と今日のタスク、ポモドーロ風タイマー、Undo対応の実績記録。SaaSとしてデータを安全に保存します。</p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a href="#pricing" class="btn-primary">今すぐはじめる</a>
+            <a href="#how" class="btn-secondary">2分でわかる</a>
+          </div>
+          <div class="mt-6 flex items-center gap-4 text-xs text-neutral-400">
+            <div class="flex -space-x-2">
+              <div class="avatar"></div><div class="avatar"></div><div class="avatar"></div>
+            </div>
+            <span>学習継続率 +32%（社内検証）</span>
+          </div>
+        </div>
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-3 backdrop-blur-md shadow-2xl">
+          <div class="aspect-video w-full rounded-xl bg-gradient-to-br from-neutral-800 to-neutral-900 flex items-center justify-center text-neutral-400">Product screenshot / video</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Partners -->
+    <section aria-label="Partners" class="py-10">
+      <div class="mx-auto max-w-7xl px-4">
+        <p class="text-center text-xs uppercase tracking-widest text-neutral-400">Trusted by learners</p>
+        <div class="mt-6 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6 opacity-70">
+          <div class="logo"></div><div class="logo"></div><div class="logo"></div><div class="logo"></div><div class="logo"></div><div class="logo"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits -->
+    <section id="features" class="py-16">
+      <div class="mx-auto max-w-7xl px-4">
+        <h2 class="section-title">Benefits</h2>
+        <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <article class="card">
+            <h3 class="card-title">今日やるべきことが一目で</h3>
+            <p class="card-body">ウィークリー計画と連動した「今日のタスク」を自動抽出。迷いを無くし、着手までの摩擦を下げます。</p>
+          </article>
+          <article class="card">
+            <h3 class="card-title">実績のUndo/Redo</h3>
+            <p class="card-body">誤入力もすぐに巻き戻し。実績管理のストレスを最小化します。</p>
+          </article>
+          <article class="card">
+            <h3 class="card-title">タイマー連携</h3>
+            <p class="card-body">円形タイマーやインラインタイマーがタスクに紐づき、計測→保存までシームレス。</p>
+          </article>
+          <article class="card">
+            <h3 class="card-title">リマインダー通知</h3>
+            <p class="card-body">開始時間にブラウザ通知。忘れずに着手できます。</p>
+          </article>
+          <article class="card">
+            <h3 class="card-title">テーマ / 多言語</h3>
+            <p class="card-body">ダーク/ライト、日本語/英語をサポート。見やすいUIで集中を妨げません。</p>
+          </article>
+          <article class="card">
+            <h3 class="card-title">Pro 機能</h3>
+            <p class="card-body">エクスポート、詳細統計、上限緩和を提供（Stripe 決済）。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section id="how" class="py-16">
+      <div class="mx-auto max-w-7xl px-4">
+        <h2 class="section-title">How it works</h2>
+        <div class="mt-8 grid md:grid-cols-3 gap-6">
+          <div class="step"><span class="step-num">1</span><h3>計画を立てる</h3><p>カテゴリ・曜日ごとに配分し、今週の計画を作成。</p></div>
+          <div class="step"><span class="step-num">2</span><h3>タイマーで計測</h3><p>タスクに紐づくタイマーで実績を記録。</p></div>
+          <div class="step"><span class="step-num">3</span><h3>振り返る</h3><p>ダッシュボードと統計で進捗を可視化。</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="py-16">
+      <div class="mx-auto max-w-7xl px-4">
+        <h2 class="section-title">Pricing</h2>
+        <div class="mt-8 grid md:grid-cols-3 gap-6">
+          <div class="price-card">
+            <div class="price-badge">Free</div>
+            <div class="price">¥0<span class="unit">/month</span></div>
+            <ul class="features">
+              <li>基本機能</li>
+              <li>月間上限 50 タスク</li>
+              <li>タイマー / リマインダー</li>
+            </ul>
+            <a href="#cta" class="btn-secondary w-full text-center">Start</a>
+          </div>
+          <div class="price-card featured">
+            <div class="price-badge">Pro</div>
+            <div class="price">¥500<span class="unit">/month</span></div>
+            <ul class="features">
+              <li>上限緩和（1000タスク）</li>
+              <li>詳細統計・エクスポート</li>
+              <li>優先サポート</li>
+            </ul>
+            <a href="#cta" class="btn-primary w-full text-center">Get Pro</a>
+          </div>
+          <div class="price-card">
+            <div class="price-badge">Team</div>
+            <div class="price">ご相談<span class="unit"></span></div>
+            <ul class="features">
+              <li>組織向け権限</li>
+              <li>カスタム要件</li>
+              <li>SLA/請求書</li>
+            </ul>
+            <a href="#cta" class="btn-secondary w-full text-center">Contact</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-14">
+      <div class="mx-auto max-w-7xl px-4">
+        <h2 class="section-title">Loved by learners</h2>
+        <div class="mt-8 grid md:grid-cols-3 gap-6">
+          <figure class="testimonial"><div class="stars">★★★★★</div><blockquote>「毎日の学習が習慣化しました。」</blockquote><figcaption>大学生</figcaption></figure>
+          <figure class="testimonial"><div class="stars">★★★★★</div><blockquote>「Undo付き実績が神。記録が怖くなくなった」</blockquote><figcaption>社会人</figcaption></figure>
+          <figure class="testimonial"><div class="stars">★★★★☆</div><blockquote>「タイマーがタスクとつながるのが便利」</blockquote><figcaption>院生</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="py-16">
+      <div class="mx-auto max-w-5xl px-4">
+        <h2 class="section-title">FAQ</h2>
+        <div class="mt-6 divide-y divide-white/10 rounded-xl border border-white/10">
+          <details class="faq" open>
+            <summary>学習データはどこに保存されますか？</summary>
+            <p>Supabase の安全なデータベースに保存され、RLS で保護されます。</p>
+          </details>
+          <details class="faq">
+            <summary>有料プランの解約はいつでも可能ですか？</summary>
+            <p>はい。Stripe Customer Portal からいつでもキャンセルできます。</p>
+          </details>
+          <details class="faq">
+            <summary>学校/法人向けの導入は可能ですか？</summary>
+            <p>可能です。お問い合わせください。</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section id="cta" class="py-16">
+      <div class="mx-auto max-w-5xl px-4">
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-10 text-center backdrop-blur">
+          <h2 class="text-3xl font-bold">今日から学習を前に進めよう</h2>
+          <p class="mt-2 text-neutral-300">無料で始めて、必要になったら Pro へ。</p>
+          <div class="mt-6 flex justify-center gap-3">
+            <a href="#pricing" class="btn-primary">Get Started</a>
+            <a href="../" class="btn-secondary">アプリを見る</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-white/10 py-10 text-sm text-neutral-400">
+      <div class="mx-auto max-w-7xl px-4 flex flex-col md:flex-row items-center justify-between gap-4">
+        <div class="flex items-center gap-2">
+          <img src="./assets/logo.svg" class="h-5 w-5" alt="Planer" />
+          <span>© Planer</span>
+        </div>
+        <div class="flex items-center gap-6">
+          <a href="#pricing" class="hover:text-white">Pricing</a>
+          <a href="#faq" class="hover:text-white">FAQ</a>
+          <a href="../docs/DEPLOYMENT.md" class="hover:text-white">Docs</a>
+        </div>
+      </div>
+    </footer>
+    <script src="./scripts.js"></script>
+  </body>
+  </html>
+
+
