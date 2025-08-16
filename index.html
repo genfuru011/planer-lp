@@ -25,6 +25,7 @@
           <a href="#how" class="hover:text-white">How it works</a>
           <a href="#pricing" class="hover:text-white">Pricing</a>
           <a href="#faq" class="hover:text-white">FAQ</a>
+          <a href="#contact" class="hover:text-white">Contact</a>
           <a href="#cta" class="ml-2 rounded-lg bg-white/10 hover:bg-white/20 px-4 py-2 text-white">Get started</a>
         </nav>
       </div>
@@ -193,6 +194,33 @@
             <a href="../" class="btn-secondary">アプリを見る</a>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-16">
+      <div class="mx-auto max-w-2xl px-4">
+        <h2 class="section-title">お問い合わせ</h2>
+        <form action="https://formspree.io/f/xbldzzqq" method="POST" class="mt-6 grid gap-4">
+          <div>
+            <label class="block text-sm text-neutral-300 mb-1">お名前</label>
+            <input name="name" required class="w-full h-11 rounded-lg bg-white/5 border border-white/10 px-3" />
+          </div>
+          <div>
+            <label class="block text-sm text-neutral-300 mb-1">メールアドレス</label>
+            <input type="email" name="email" required class="w-full h-11 rounded-lg bg-white/5 border border-white/10 px-3" />
+          </div>
+          <div>
+            <label class="block text-sm text-neutral-300 mb-1">件名</label>
+            <input name="subject" class="w-full h-11 rounded-lg bg-white/5 border border-white/10 px-3" />
+          </div>
+          <div>
+            <label class="block text-sm text-neutral-300 mb-1">内容</label>
+            <textarea name="message" rows="6" required class="w-full rounded-lg bg-white/5 border border-white/10 px-3 py-2"></textarea>
+          </div>
+          <button class="btn-primary w-full" type="submit">送信</button>
+          <p class="text-xs text-neutral-500">送信によりプライバシーポリシーに同意したものとみなします。</p>
+        </form>
       </div>
     </section>
 
